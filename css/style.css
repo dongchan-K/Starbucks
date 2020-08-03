@@ -1,0 +1,147 @@
+/* body */
+body{
+ 
+}
+
+/* header */
+.header {
+  background-color: #f6f5ef;
+  
+  min-width: 1100px;
+  display: flex;
+  flex-flow: row wrap;
+  left: 0;
+  right: 0; 
+  top: 0;
+  position: fixed;
+  justify-content: center;
+}
+
+/* Navigation 요소가 뷰포트 전체 영역을 차지하기 위한 역할 */
+.inner {
+  width: 1100px;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* header__logo */
+.header__logo {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 150px;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Navigation*/
+.nav {
+  order: 1;
+}
+
+.nav__menu {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.nav__menuItem > a{
+  display: block;
+  padding: 20px 30px 40px 30px;
+  font-size: 1.4rem;  
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.nav__menuItem > a:hover {
+  background-color: #2c2a29;
+  color: #669900;
+  text-decoration: underline;
+}
+
+/*unlist-userlink*/
+.unList__userLink {
+  font-size: 0;  
+}
+.unList__userLink li{
+  display: inline-block;
+  border-right: 1px solid #ccc;
+}
+.unList__userLink li:last-child {
+  border-right: none;
+}
+.unList__userLink a {
+  font-size: 1.2rem;
+  padding: 10px 15px;
+}
+.unList__userLink a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  margin: 10px 40px 0 5px;
+  position: relative;
+}
+
+.form input{
+  display: none;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 32px;
+  height: 34px;
+  padding: 5px 10px 5px 5px;
+  border: 0;
+  border-radius: 5px;
+}
+
+/* 추후 JS로 Btn Controll 기능 추가 예정 */
+.form [type="search"].isSearch {
+  display: block;
+  z-index: 1;
+  width: calc(100% - 32px);
+}
+
+/* IR기법 해결 - Padding Trick */
+.form__btnSearch {
+  padding: 0;
+  border: 0;
+  width: 32px;
+  height: 34px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  padding-top: 34px;
+  background: #fff url('../starbuximg/icon_magnifier_black.png') no-repeat center ;
+}
+
+/*스타벅스 사이트에서는 focus시 열리게 되어 있다 사용자에게 큰 불
+편이 될 수 있으니 hover할때도 추가*/
+.form__btnSearch:focus,
+.form__btnSearch:hover
+{
+  background-position: right;
+  animation: anime 500ms both;
+}
+
+@keyframes anime {
+  0% {
+    width: 32px;
+
+  }
+  100% {
+    width: 180px;
+  }
+}
+
+
+

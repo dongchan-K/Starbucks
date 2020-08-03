@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+@font-face {
+  font-family: 'Noto Sans KR', 'Jeju Gothic',sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Noto Sans KR', 'Jeju Gothic',sans-serif;
+  font-weight: 300;
+  color: #181818;
+  background-color: #f6f5ef;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.a11yHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav__subMenu {
+  display: none;
+}
