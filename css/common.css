@@ -6,6 +6,10 @@
   src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 }
 
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
 *,
 *::before,
 *::after {
@@ -19,11 +23,14 @@ body {
   font-family: 'Noto Sans KR', 'Jeju Gothic',sans-serif;
   font-weight: 300;
   color: #181818;
-  background-color: #f6f5ef;
+  margin-top: 130px;
 }
 a {
   color: inherit;
   text-decoration: none;
+}
+main{
+  margin-top: -4px;
 }
 
 .a11yHidden {
@@ -34,13 +41,11 @@ a {
   clip: rect(0, 0, 0, 0);
   clip-path: polygon(0 0, 0 0, 0 0);
 }
-
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
-
 .nav__subMenu {
   display: none;
 }
