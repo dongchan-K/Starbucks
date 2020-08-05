@@ -5,23 +5,22 @@
   left: 0;
   right: 0; 
   position: fixed;
+  height: 120px;
 }
 
 .header .inner {
-
+  display: flex;
+  align-items: center;
 }
 
 .header__logo {
   float: left;
- 
-  margin: 30px 0 0 0;
-  width: 80px;
-  height: 80px;
- 
 }
 .header__logo img {
-  width: 100%;
-  height: 100%;
+  width: 75px;
+  height: 75px;
+  /* width: 100%;
+  height: 100%; */
 }
 .section .inner {
 
@@ -37,7 +36,7 @@
   order: 2;
 }
 .nav__menu {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-right: 50px;
 }
 
@@ -47,7 +46,7 @@
 
 .nav__menuItem > a{
   display: block;
-  padding: 20px 30px 40px 30px;
+  padding: 10px 20px 30px 20px;
   font-size: 1.4rem;  
   font-weight: 300;
   text-transform: uppercase;
@@ -72,7 +71,7 @@
 
 .unList__userLink a {
   font-size: 1.2rem;
-  padding: 10px 15px;
+  padding: 5px 16px;
   
 }
 .unList__userLink a:hover {
@@ -114,6 +113,7 @@
   cursor: pointer;
   overflow: hidden;
   padding-top: 34px;
+  margin-right: 60px;
   background: #fff url('../image/icon_magnifier_black.png') no-repeat center;
 }
 
@@ -138,7 +138,7 @@
 /* Article */
 .slogan {
   /* background-color: #70C4D9; */
-  min-height: 650px;
+  height: 650px;
   background-color: #70C4D9;
   background-image: url(../starbuximg/summer3_mv_bg.png);
   width: 100%;
@@ -154,17 +154,19 @@
 }
 .slogan__img {
   /* background-color: blue; */
-  padding:50px;
+  padding-top: 50px;
   opacity: 0;
   animation: sloganAni 1s ease-in-out 1.5s both;
 }
 .slogan__link {
   margin: 0;
   padding: 0;
-  position: absolute;
-  top: 370px;
-  left: 120px;
-  font-size: 1.5rem;
+  display: block;
+  width: 123px;
+  height: 40px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.4rem;
   font-weight: 400;
   border: 2px #fff solid;
   padding: 10px 25px;
@@ -271,6 +273,7 @@ figcaption div::after {
 
 /* Section1 */
 .notice {
+  height: 60px;
   text-align: center;
   background-color: #111;
   color: #fff;
@@ -327,7 +330,7 @@ figcaption div::after {
 /* Section2 */
 .memberService {
   /* height: auto; */
-  min-height: 260px;
+  height: 260px;
   /* background-color: #272727; */
   padding: 20px 50px;
   padding-right: 0;
@@ -471,6 +474,7 @@ figcaption div::after {
 
 /* Section3 */
 .ad {
+  height: 570px;
   background-image: url(../image/20_summer_rwanda_bg.jpg);
   background-size: cover;
   background-color: #DBEBF8;
@@ -479,6 +483,7 @@ figcaption div::after {
   overflow: hidden;
 }
 .ad__figure {
+
 }
 .ad__figure img {
   float: left;
@@ -551,7 +556,7 @@ figcaption div::after {
 
 /* News */
 .news{
-  min-height: 400px;
+  height: 400px;
   background-color: #c3d2d9;
   background-image: url(../image/summer2_reserve_bean.png);
   background-repeat: no-repeat;
