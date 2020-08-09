@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-
 @font-face {
-  font-family: 'Noto Sans KR', 'Jeju Gothic',sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
-}
-
-.inner {
-  width: 1100px;
-  margin: 0 auto;
+  font-family: "Noto Sans KR", "Jeju Gothic", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 }
 *,
 *::before,
@@ -19,18 +12,67 @@
 html {
   font-size: 10px;
 }
+
 body {
-  font-family: 'Noto Sans KR', 'Jeju Gothic',sans-serif;
+  font-family: "Noto Sans KR", "Jeju Gothic", sans-serif;
   font-weight: 300;
   color: #181818;
   margin-top: 120px;
+  /* overflow: auto; */
+  background-color: inherit;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
-main{
-  margin-top: -4px;
+.a11yHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.container {
+  /* width: 100%; */
+  /* margin: 0 auto; */
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;@import url("http://fonts.googleapis.com/earlyaccess/jejugothic.css");
+@font-face {
+  font-family: "Noto Sans KR", "Jeju Gothic", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Noto Sans KR", "Jeju Gothic", sans-serif;
+  font-weight: 300;
+  color: #181818;
+  margin-top: 120px;
+  /* overflow: auto; */
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus{
+  text-decoration: underline;
 }
 
 .a11yHidden {
@@ -41,11 +83,57 @@ main{
   clip: rect(0, 0, 0, 0);
   clip-path: polygon(0 0, 0 0, 0 0);
 }
+
+span[aria-hidden=true]{
+  /* color: blue; */
+  display: inline;
+}
+
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 .nav__subMenu {
   display: none;
+}
+
+/* 버튼 공통 스타일 */
+.btn-com {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  width: 125px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #000;
+  font-size: 1.5rem;
+  transition: all 500ms;
+}
+
+.btn-com:hover {
+  text-decoration: underline;
+}
+
+
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.nav__subMenu {
+  display: none;
+}
+
+a:focus{
+  text-decoration: underline;
 }
